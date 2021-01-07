@@ -1,0 +1,19 @@
+
+spring:
+  datasource:
+    name: test
+    url: jdbc:mysql://bj-cdb-nqzzkayy.sql.tencentcdb.com:61097/mayueyue
+    username: root
+    password: fLeHadrR98C4jt
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+#  mapper-locations: classpath:mapping/*.xml
+  mapper-locations: classpath:com/example/demo/mapper/*.xml
+
+# 这个目录下打印debug日志
+logging:
+  level:
+    com:
+      mayueyue:
+        mapper: debug
